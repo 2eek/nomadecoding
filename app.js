@@ -22,16 +22,10 @@
 // sayHello('lynn');
 
 // function get_argument(arg) {
-//   return arg * 1000;
+//   return arg;
 // }
 // alert(get_argument(1));
 // alert(get_argument(2));
-
-// function get_arguments(arg1, arg2) {
-//   return arg1 + arg2;
-// }
-// alert(get_arguments(10, 20));
-// alert(get_arguments(20, 30));
 
 // function numbering() {
 //   console.log(1);
@@ -53,95 +47,108 @@
 // for (var i = 0; i < 1000; i++) {
 //   numbering();
 // }
-
-// function numbering() {
-//   var i = 0;
-//   while (i < 10) {
-//     console.log(i);
-//     i += 1;
-//   }
-// }
-
-// function get_member1() {
-//   return 'egoing';
-// }
-
-// function get_member2() {
-//   return 'k8805';
-// }
-
-// console.log(get_member1());
-// console.log(get_member2());
-
-// function get_member3() {
-//   return 'egoing'; // 여기까지만 출력됨.
-//   return 'leezche';
-//   return 'graphittie';
-// }
-
-// console.log(get_member3());
-
-// numbering = function () {
-//   i = 0;
-//   while (i < 10) {
-//     console.log(i);
-//     i += 1;
-//   }
-// };
-// console.log(numbering());
-
-// (function () {
-//   i = 0;
-//   while (i < 10) {
-//     console.log(i);
-//     i += 1;
-//   }
-// })();
-
-// function get_arguments(arg1, arg2) {
-//   return arg1 + arg2;
-// }
-// alert(get_arguments(10, 20));
-// alert(get_arguments(20, 30));
-
-// function sayHello(a) {
-//   console.log('Hello my name is ' + a);
-// }
-
-// function sayHello(c) {
-//   console.log('Hello my name is ' + c);
-// }
-
-// sayHello('hihihi');
-// sayHello('nico');
-// sayHello('mike');
-
-// function sayHello(nameOfPerson, age) {
-//   console.log('Hello my name is ' + nameOfPerson + " and I'm", age);
-// }
-
-// sayHello('nico', 10);
-// sayHello('dal', 23);
-// sayHello('lynn', 21);
+// // hello
 
 // const player = {
-//   name: 'nico',
-//   sayHello: function (otherPersonsName) {
-//     console.log('hello ' + otherPersonsName + ' nice to meet you');
-//   },
+//   name: 'Nico',
+//   age: 98,
 // };
 
-// console.log(player.name);
-// player.sayHello('lynn');
+// console.log(player);
+// player.name ="nicolas";
+// console.log(player);
+// player.sexy="soon";
+// console.log(player);
 
 // function plus(a, b) {
 //   console.log(a + b);
 // }
 
-// plus(5, 5);
+// plus(2, 3);
 
-const toBuy = ['potato', 'tomato', 'pizza'];
-toBuy[2] = 'water';
-console.log(toBuy);
-toBuy.push('meet');
-console.log(toBuy);
+// function minusFive(potato) {
+//   console.log(potato - 5);
+// }
+// minusFive(10, 10, 12, 34, 4, 5, 6);
+
+// const calculator= {
+//   add: function add(a,b){
+//     console.log(a+b);
+//   },
+//   minus: function (a, b) {
+//     console.log(a - b);
+//     },
+//     div: function (a, b) {
+//       console.log (a / b);
+//       },
+//       multi: function (a, b) {
+//         console.log (a * b);
+//         },
+//         power: function (a, b) {
+//           console.log (a ** b);
+//           },
+//           };
+
+// const calculator= {
+//   add:
+// function add(a,b){
+// console.log(a+b);
+// }
+
+// add(2,3);
+
+//   const age= 96;
+//   function calculaterKrAge(ageOfForeigner){
+//     ageOfForeigner +2;
+//     return "hello";
+//   }
+
+//   const krAge = calculaterKrAge(age);
+//   console.log(krAge);
+
+// const calculator= {
+//   plus: function (a,b){
+//   return a+b;
+//   }
+//   }
+
+//   const plusResult= calculator.plus(2,3);
+//   console.log(plusResult);
+
+// const age= prompt("How old are you?");
+// console.log(age);
+// console.log(typeof age); // variable의 타입을 볼 수 있음
+
+// const age = prompt('How old are you?');
+
+// console.log(typeof age, typeof parseInt(age));
+
+// console.log(typeof age, parseInt(age));
+
+// const age= parseInt(prompt("How old are you?"));
+// console.log(isNaN(age));
+
+// const age=parseInt(prompt("How old are you?"));
+
+// if(isNaN(age)){
+// console.log("Please write a number");
+// } else if(age<18){
+
+// console.log("You are too young.");
+
+// }else{
+// console.log("You can drink");
+
+const age = parseInt(prompt('How old are you?'));
+
+if (isNaN(age) || age < 0) {
+  console.log('Please write a real positive number');
+} else if (age < 18) {
+  console.log('You are too young.');
+} else if (age >= 18 && age <= 50) {
+  console.log('You can drink');
+} else if (age > 50 && age <= 80) {
+  console.log("You can't drink");
+} else if (age > 80) {
+  console.log('You can do whatever you want.');
+}
