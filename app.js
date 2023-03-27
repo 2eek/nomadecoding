@@ -234,11 +234,15 @@ function handleMouseLeave() {
   title.innerText = 'Mouse is gone!';
 }
 
+function handleWindowCopy() {
+  alert('copier');
+}
+
 title.addEventListener('click', handleTitleClick); // 클릭 이벤트에대한 리쓴
 //handleTitleClick()//함수-> h1 클릭될 때 실행되는 함수
 title.addEventListener('mouseenter', handleMouseEnter);
 title.addEventListener('mouseleave', handleMouseLeave);
-
+window.addEventListener('copy', handleWindowCopy);
 // Select the body element
 const body = document.querySelector('body');
 
