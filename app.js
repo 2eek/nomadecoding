@@ -155,5 +155,124 @@
 //   console.log('You can do whatever you want.');
 // }
 
-const title = document.getElementById('title');
-title.innerText = 'Got you!';
+// const kkk = document.getElementById('yees');
+
+// kkk.innerText = 'Got you!';
+// console.log(kkk.id);
+// console.log(kkk.className);
+
+// const hell = document.getElementsByClassName('hello');
+// console.log(hell);
+
+// const title = document.querySelector('.hello ');
+// console.log(title);
+
+// const title = document.querySelector('.hello ');
+// console.log(title);
+
+// const title = document.querySelector('#hello ');
+// console.log(title);
+
+// const title = document.querySelector('div.hello:first-child h1');
+
+// function handleTitleClick() {
+//   const colors = [
+//     'red',
+//     'orange',
+//     'yellow',
+//     'green',
+//     'blue',
+//     'indigo',
+//     'violet',
+//     'black',
+//   ];
+//   let currentColor = title.style.color;
+//   let currentIndex = colors.indexOf(currentColor);
+//   if (currentIndex === colors.length - 1) {
+//     title.style.color = colors[0];
+//   } else {
+//     title.style.color = colors[currentIndex + 1];
+//   }
+// }
+// title.addEventListener('click', handleTitleClick);
+// // function handleTitleclick() {
+//   console.log('title was clicked!');
+// title.style.color = 'red';
+// title.style.color = 'blue';
+
+// }
+
+const title = document.querySelector('div.hello:first-child h1');
+function handleTitleClick() {
+  // title.style.color = 'blue';
+  // console.log('title was clicked');
+  const colors = [
+    'red',
+    'orange',
+    'yellow',
+    'green',
+    'blue',
+    'indigo',
+    'violet',
+    'black',
+  ];
+  let currentColor = title.style.color;
+  let currentIndex = colors.indexOf(currentColor);
+  if (currentIndex === colors.length - 1) {
+    title.style.color = colors[0];
+  } else {
+    title.style.color = colors[currentIndex + 1];
+  }
+}
+
+function handleMouseEnter() {
+  title.innerText = 'Mouse is here';
+  //console.log('Mouse is here!');
+}
+
+function handleMouseLeave() {
+  title.innerText = 'Mouse is gone!';
+}
+
+title.addEventListener('click', handleTitleClick); // 클릭 이벤트에대한 리쓴
+//handleTitleClick()//함수-> h1 클릭될 때 실행되는 함수
+title.addEventListener('mouseenter', handleMouseEnter);
+title.addEventListener('mouseleave', handleMouseLeave);
+
+// Select the body element
+const body = document.querySelector('body');
+
+// Define an array of colors
+const colors = [
+  '#F44336',
+  '#E91E63',
+  '#9C27B0',
+  '#673AB7',
+  '#3F51B5',
+  '#2196F3',
+  '#03A9F4',
+  '#00BCD4',
+  '#009688',
+  '#4CAF50',
+  '#8BC34A',
+  '#CDDC39',
+  '#FFEB3B',
+  '#FFC107',
+  '#FF9800',
+  '#FF5722',
+  '#795548',
+  '#9E9E9E',
+  '#607D8B',
+];
+
+// Function to generate a random color from the array
+function getRandomColor() {
+  const randomIndex = Math.floor(Math.random() * colors.length);
+  return colors[randomIndex];
+}
+
+// Add a click event listener to the body element
+body.addEventListener('click', function () {
+  // Set the background color of the body to a random color
+  body.style.backgroundColor = getRandomColor();
+});
